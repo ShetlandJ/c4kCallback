@@ -26,7 +26,7 @@ button.onclick = function () {
   popUpDiv.style.display = "block";
 };
 
-// Button text
+// Pop up text
 var h41 = document.createElement('h4');
 var h42 = document.createElement('h4');
 
@@ -41,6 +41,18 @@ h42.style.color = "white"
 popUpDiv.appendChild(h41)
 popUpDiv.appendChild(h42)
 
+// Pop up Form
+var form = document.createElement('div')
+form.innerHTML = '<form action="" method="post"><label style="color: white" for="name">Name:</label><input style="padding: 6px 10px 10px 6px" type="text" class="form" name="name"><label style="color: white" for="phone">Phone number:</label><input style="padding: 6px 10px 10px 6px" type="number" class="form" name="phone"></form><input style="border: solid black 1px;" type="submit" value="Submit" />'
+
+popUpDiv.appendChild(form);
+
+// GDPR
+
+var gdpr = document.createElement('a')
+gdpr.innerText = "How will my data be used?"
+
+popUpDiv.appendChild(gdpr);
 
 if (window.location.href.includes("clubs.classforkids")) {
 
