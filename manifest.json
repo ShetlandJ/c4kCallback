@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "c4k Callback",
+    "short_name": "c4kc",
+    "description": "Adding a 'request callback' button to the C4K website",
+    "author": "james@jastewart.co.uk",
+    "version": "1.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
