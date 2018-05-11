@@ -7,7 +7,7 @@ popUpDiv.style.bottom = "100px";
 popUpDiv.style.right = "0px";
 popUpDiv.style.zIndex = "10000";
 popUpDiv.style.width = "300px"
-// popUpDiv.style.display = "none"
+popUpDiv.style.visibility = "hidden"
 popUpDiv.style.borderRadius = "5px 0px 0px 5px"
 popUpDiv.style.display = "flex"
 popUpDiv.style.flexDirection = "column"
@@ -23,7 +23,7 @@ button.style.right = "0px";
 button.style.borderRadius = "5px 0px 0px 5px"
 button.style.padding = "8px 20px 8px 20px"
 button.onclick = function () {
-  popUpDiv.style.display = "block";
+  popUpDiv.style.visibility = "visible";
 };
 
 // Pop up text
